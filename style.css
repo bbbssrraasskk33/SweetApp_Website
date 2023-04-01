@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(rgba(46, 2, 46, 0.3), rgba(46, 2, 46, 0.3)),
+    url(images/lotus.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 0 50px;
+  color: rgb(46, 2, 46);
+}
+.navbar {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  cursor: pointer;
+  height: 100px;
+  width: auto;
+}
+.bi {
+  font-size: 50px;
+  cursor: pointer;
+  margin-right: 30px;
+  display: none;
+}
+
+nav {
+  height: 40px;
+  flex: 1;
+  text-align: right;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(46, 2, 46);
+  text-shadow: 0 0 15px white;
+  font-weight: bold;
+  border: solid 2px rgb(46, 2, 46);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px white;
+}
+nav ul li a:hover {
+  background-color: rgb(46, 2, 46);
+  color: white;
+  box-shadow: 0 0 15px white;
+  transition: 0.3s;
+}
+
+@media (max-width: 1000px) {
+  .ul {
+    display: none;
+  }
+  .bi {
+    display: block;
+  }
+  .row {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .col1 {
+    grid-template-columns: auto auto !important;
+  }
+  .card {
+    width: 250px !important;
+    height: 400px !important;
+  }
+}
+
+.row {
+  display: flex;
+  height: 90%;
+  align-items: center;
+}
+.col {
+  flex-basis: 50%;
+  margin-top: 20px;
+}
+.col1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+h1 {
+  font-size: 80px;
+  margin-left: 50px;
+  text-shadow: 0 0 10px white;
+}
+p {
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+}
+button {
+  color: rgb(46, 2, 46);
+  font-size: 15px;
+  padding: 10px 10px;
+  background-color: transparent;
+  border: solid 2px rgb(46, 2, 46);
+  border-radius: 20px;
+  outline: none;
+  margin-top: 30px;
+  cursor: pointer;
+  margin-left: 150px;
+  box-shadow: 0 0 15px white;
+}
+button:hover {
+  background-color: rgb(46, 2, 46);
+  color: white;
+  box-shadow: 0 0 15px white;
+  transition: 0.3s;
+}
+.card {
+  width: 200px;
+  height: 230px;
+  color: aliceblue;
+  display: inline-block;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  color: rgb(255, 255, 255);
+  transition: transform 0.6s;
+}
+.card:hover {
+  box-shadow: 0 0 20px white;
+  transform: translateY(-10px);
+}
+.card1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(images/tart.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.card2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(images/cupcake.webp);
+  background-position: center;
+  background-size: cover;
+}
+.card3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(images/pasta.webp);
+  background-position: center;
+  background-size: cover;
+}
+.card4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(images/magnolia.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.card p,
+h2 {
+  text-shadow: 0 0 10px white;
+  text-indent: 10px;
+  padding: 2px;
+}
